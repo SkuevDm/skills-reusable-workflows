@@ -49,6 +49,4 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2egit add .github/workflows/reusable-node-quality.yml
-git commit -m "feat: create reusable node quality workflow"
-git push origin reusable-workflows
+      - run: npm run test:e2e
